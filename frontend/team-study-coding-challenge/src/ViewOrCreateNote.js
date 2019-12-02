@@ -47,11 +47,11 @@ class ViewOrCreateNote extends React.Component {
     render() {
         return (
             <div>
-                <div>Title:</div>
+                <div className="header">Title:</div>
                 <div className="note-title"></div>
-                <div>Body:</div>
+                <div className="header">Body:</div>
                 <div className="note-body"></div>
-                <div onClick={!!this.props.noteElem ? this.props.unselectNote : this.saveNote}>{!!this.props.noteElem ? "View All Notes" : "Save Note"}</div>
+                <div className="note-action" onClick={!!this.props.noteElem ? this.props.unselectNote : this.saveNote}>{!!this.props.noteElem ? "View All Notes" : "Save Note"}</div>
             </div>
         )
     }

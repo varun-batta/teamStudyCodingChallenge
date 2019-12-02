@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Notes list css */
+
+.list-title {
+  margin: 10px auto;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notes-list-title {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.new-note {
+  margin-top: 50px;
+  margin-right: 50px;
+  padding: 15px;
+  float: right;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.note-action {
+  cursor: pointer;
+}
+
+/* Viewing and/or creating note css */
+
+.header {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.note-action {
+  margin-top: 50px;
+  margin-right: 50px;
+  padding: 15px;
+  float: right;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}

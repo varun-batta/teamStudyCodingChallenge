@@ -67,13 +67,13 @@ class ListOfNotes extends React.Component {
         : 
         (
             <div className="notes-list">
-                <h1>Available notes: </h1>
+                <h1 className="notes-list-title">Available notes: </h1>
                 <ul>
                     {this.state.notes.map((element, index) => 
-                        <div key={index} onClick={(e) => this.selectNote(index)}>{element.title}</div>
+                        <div key={index} onClick={(e) => this.selectNote(index)} className="list-title">{element.title}</div>
                     )}
                 </ul>
-                <h2 onClick={(index) => this.selectNote(-1)}>+ New Note</h2>
+                <h2 onClick={(index) => this.selectNote(-1)} className="new-note">+ New Note</h2>
             </div>
         )
     }
